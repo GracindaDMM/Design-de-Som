@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmotionWheel</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="custom-cursor"></div>
+    <header class="header">
+        <image src="imagens/logo.png" alt="Logo" />
+    </header>
+
+    <div class="emotions-lists">
+        <div class="emotion-column">
+            <div class="emotion-item">
+                <span class="emotion-file">
+                    <image src="imagens/flor_vigilance.png" width="20px" height="20px" />
+                </span>
+                <span class="emotion-name">vigilance</span>
+
+            </div>
+            <div class="emotion-item">
+                <span class="emotion-file">
+                    <image src="imagens/flor_rage.png" width="20px" height="20px" />
+                </span>
+                <span class="emotion-name">rage</span>
+
+            </div>
+            <div class="emotion-item">
+                <span class="emotion-file">
+                    <image src="imagens/flor_loathing.png" width="20px" height="20px" />
+                </span>
+                <span class="emotion-name">loathing</span>
+
+            </div>
+            <div class="emotion-item">
+                <span class="emotion-file">
+                    <image src="imagens/flor_grief.png" width="20px" height="20px" />
+                </span>
+                <span class="emotion-name">grief</span>
+
+            </div>
+            <div class="emotion-item">
+                <span class="emotion-file">
+                    <image src="imagens/flor_amazement.png" width="20px" height="20px" />
+                </span>
+                <span class="emotion-name">amazement</span>
+
+            </div>
+            <div class="emotion-item">
+                <span class="emotion-file">
+                    <image src="imagens/flor_terror.png" width="20px" height="20px" />
+                </span>
+                <span class="emotion-name">terror</span>
+
+            </div>
+            <div class="emotion-item">
+                <span class="emotion-file">
+                    <image src="imagens/flor_admiration.png" width="20px" height="20px" />
+                </span>
+                <span class="emotion-name">admiration</span>
+
+            </div>
+            <div class="emotion-item">
+                <span class="emotion-file">
+                    <image src="imagens/flor_ecstasy.png" width="20px" height="20px" />
+                </span>
+                <span class="emotion-name">ecstasy</span>
+
+            </div>
+        </div>
+
+        <div class="emotion-column">
+            <div class="emotion-item">
+                <span class="emotion-file">
+                    <image src="imagens/flor_optimism.png" width="28px" height="28px" />
+                </span>
+                <span class="emotion-name">optimism</span>
+
+            </div>
+            <div class="emotion-item">
+                <span class="emotion-file">
+                    <image src="imagens/flor_aggressiveness.png" width="28px" height="28px" />
+                </span>
+                <span class="emotion-name">aggressiveness</span>
+
+            </div>
+            <div class="emotion-item">
+                <span class="emotion-file">
+                    <image src="imagens/flor_contempt.png" width="28px" height="28px" />
+                </span>
+                <span class="emotion-name">contempt</span>
+
+            </div>
+            <div class="emotion-item">
+                <span class="emotion-file">
+                    <image src="imagens/flor_remorse.png" width="28px" height="28px" />
+                </span>
+                <span class="emotion-name">remorse</span>
+
+            </div>
+            <div class="emotion-item">
+                <span class="emotion-file">
+                    <image src="imagens/flor_disapproval.png" width="28px" height="28px" />
+                </span>
+                <span class="emotion-name">disapproval</span>
+
+            </div>
+            <div class="emotion-item">
+                <span class="emotion-file">
+                    <image src="imagens/flor_awe.png" width="28px" height="28px" />
+                </span>
+                <span class="emotion-name">awe</span>
+            </div>
+            <div class="emotion-item">
+                <span class="emotion-file">
+                    <image src="imagens/flor_submission.png" width="28px" height="28px" />
+                    </image>
+                </span>
+                <span class="emotion-name">submission</span>
+            </div>
+            <div class="emotion-item">
+                <span class="emotion-file">
+                    <image src="imagens/flor_love.png" width="28px" height="28px" />
+                </span>
+                <span class="emotion-name">love</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="tooltip" id="tooltip"></div>
+    <svg width="650" height="650" viewBox="0 0 380 380">
+        <!-- Emoções de  Plutchik -->
+        <!-- pétalas de trás -->
+        <image href="imagens/love.png" class="petala" data-label="Love" x="140" y="20" width="120" height="160"
+            transform="rotate(22.5 200 200)" />
+        <image href="imagens/submission.png" class="petala" data-label="Submission" x="140" y="20" width="120"
+            height="160" transform="rotate(67.5 200 200)" />
+        <image href="imagens/awe.png" class="petala" data-label="Awe" x="140" y="20" width="120" height="160"
+            transform="rotate(112.5 200 200)" />
+        <image href="imagens/disapproval.png" class="petala" data-label="Disapproval" x="140" y="20" width="120"
+            height="160" transform="rotate(157.5 200 200)" />
+        <image href="imagens/remorse.png" class="petala" data-label="Remorse" x="140" y="20" width="120" height="160"
+            transform="rotate(202.5 200 200)" />
+        <image href="imagens/contempt.png" class="petala" data-label="Contempt" x="140" y="20" width="120" height="160"
+            transform="rotate(247.5 200 200)" />
+        <image href="imagens/aggressiveness.png" class="petala" data-label="Aggressiveness" x="140" y="20" width="120"
+            height="160" transform="rotate(292.5 200 200)" />
+        <image href="imagens/optimism.png" class="petala" data-label="Optimism" x="140" y="20" width="120" height="160"
+            transform="rotate(337.5 200 200)" />
+
+        <!-- pétalas da frente -->
+        <image href="imagens/ecstasy.png" class="petala" data-label="Ecstasy" x="140" y="40" width="120" height="160"
+            transform="rotate(0 200 200)" />
+        <image href="imagens/admiration.png" class="petala" data-label="Admiration" x="140" y="40" width="120"
+            height="160" transform="rotate(45 200 200)" />
+        <image href="imagens/terror.png" class="petala" data-label="Terror" x="140" y="40" width="120" height="160"
+            transform="rotate(90 200 200)" />
+        <image href="imagens/amazement.png" class="petala" data-label="Amazement" x="140" y="40" width="120"
+            height="160" transform="rotate(135 200 200)" />
+        <image href="imagens/grief.png" class="petala" data-label="Grief" x="140" y="40" width="120" height="160"
+            transform="rotate(180 200 200)" />
+        <image href="imagens/loathing.png" class="petala" data-label="Loathing" x="140" y="40" width="120" height="160"
+            transform="rotate(225 200 200)" />
+        <image href="imagens/rage.png" class="petala" data-label="Rage" x="140" y="40" width="120" height="160"
+            transform="rotate(270 200 200)" />
+        <image href="imagens/vigilance.png" class="petala" data-label="Vigilance" x="140" y="40" width="120"
+            height="160" transform="rotate(315 200 200)" />
+
+    </svg>
+    <footer>
+        <p>
+            Sound Design 2025/2026<br>
+            Master in Design and Multimedia, University of Coimbra<br>
+            Work completed by: Inês Pereira and Gracinda Marigorta<br>
+            Project supervision: Professor Mariana Seiça
+
+        </p>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
